@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-nav-bar pageTitle="home"></app-nav-bar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<app-user-card
+  userName="Nombre de Usuario 1"
+  userProfileImage="url_de_la_imagen_1.jpg"
+  additionalInfo="Información adicional sobre el Usuario 1"
+></app-user-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<app-user-card
+  userName="Nombre de Usuario 2"
+  userProfileImage="url_de_la_imagen_2.jpg"
+  additionalInfo="Información adicional sobre el Usuario 2"
+></app-user-card>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let color of colores">
+        <app-color-list [color]="color"></app-color-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

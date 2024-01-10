@@ -6,8 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { UserCardComponent } from '../user-card/user-card.component';
-import { NavBarComponent } from '../nav-bar/nav-bar.component';
-import { ColorListComponent } from '../color-list/color-list.component';
+
 
 @NgModule({
   imports: [
@@ -16,6 +15,6 @@ import { ColorListComponent } from '../color-list/color-list.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,UserCardComponent,NavBarComponent,ColorListComponent]
+  declarations: [HomePage,UserCardComponent]
 })
 export class HomePageModule {}

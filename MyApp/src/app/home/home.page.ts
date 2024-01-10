@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  colores = ['#FF5733', '#33FF57', '#5733FF', '#FF3333', '#33FFFF'];
-
   constructor() {}
 
 }
